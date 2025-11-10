@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canada Data Visualizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .viz-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin: 40px 0;
+            height: auto;
+            align-items: center;
+        }
+        .viz-box {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 20px;
+            width: 600px;
+            min-height: 500px;
+        }
+        .viz-title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 4px;
+            background: #fafafa;
+            align-items: center;
+        }
+
+        .viz-box {
+            width: 83vw;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Canada Population Visualizations</h1>
+    <div class="viz-container">
+        <div class="viz-box">
+            <div class="viz-title">Donut Chart: Population Breakdown</div>
+            <div style="justify-content: center; display: flex; width: 50%;">
+                <iframe src="images/donut.html" ></iframe>
+            </div>
+        </div>
+        <div class="viz-box">
+            <div class="viz-title">Scatter Plot: Mental Health vs Food Insecurity</div>
+            <iframe src="images/scatter.html"></iframe>
+        </div>
+        <div class="viz-box">
+            <div class="viz-title">Folium Map: Indigenous Population by Province</div>
+            <iframe src="images/folium_map.html"></iframe>
+        </div>
+        <div class="viz-box">
+            <div class="viz-title">Top 3 Indigenous Populations by Province</div>
+            <iframe src="images/subplots.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
